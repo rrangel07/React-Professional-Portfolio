@@ -1,0 +1,30 @@
+/* body {
+  max-width: 60%;
+  margin: 0 auto !important;
+}
+html {
+  margin: 0 auto;
+} */
+
+
+
+
+/* llevar a un media query                                                     IMPORTANTE*/
+.text {
+  letter-spacing: 0.25em;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  padding: 10% 0
+}
+
+.shot {
+  border-radius: 50%;
+}
+
+/* .shot::before{
+
+} */
+/* @media screen() {
+  
+} */
