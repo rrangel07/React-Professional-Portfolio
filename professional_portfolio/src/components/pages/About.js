@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 export default function About() {
   return (
-    <Container className='d-flex flex-wrap justify-content-center mt-5'>
+    <Container className='d-flex flex-wrap justify-content-center mt-5 background-div'>
       <Col sm={12} md={4}>
        <img src={shot} alt="profile-picture" width="100%" height="auto" className='shot'/>
       </Col>

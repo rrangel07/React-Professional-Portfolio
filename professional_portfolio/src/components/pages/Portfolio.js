@@ -1,42 +1,119 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import gadget from '../../images/gadgett.png';
+import crypto from "../../images/Sentiment Index.PNG";
+import weather from "../../images/Weather Dashboard.PNG";
+import planner from "../../images/Work Day Scheduler.PNG";
+import password from "../../images/PasswordGenerated.PNG";
+import github from "../../images/GitHub-Mark-120px-plus.png"
+import '../../styles/style.css';
 
 export default function Portfolio() {
   return (
-    <div>
-      <h1>Blog Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
-
-      <div className="container text-center">
-        <div className="row">
-          <div className="col-sm-3">
-            Level 1: .col-sm-3
-          </div>
-          <div className="col-sm-9">
-            <div className="row">
-              <div className="col-8 col-sm-6">
-                Level 2: .col-8 .col-sm-6
-              </div>
-              <div className="col-4 col-sm-6">
-                Level 2: .col-4 .col-sm-6
-              </div>
-            </div>
-          </div>
+    
+    <Container className='d-flex flex-wrap'>
+      <Col sm={12}>
+      <figure className='pos-rel'>
+        <img src={gadget} alt="GadgetGetter" id="work-img-header" className='center'/>
+        <div className="info d-flex flex-column justify-content-end">
+          <Row className='align-items-end'>
+            <Col xs={{span: 6, offset: 1}}>
+              <a href="https://gadget-getter.herokuapp.com/" target="_blank"  rel="noreferrer"><h1><strong>GadgetGetter</strong></h1></a>
+            </Col>
+            <Col xs={4} className>
+              <a href="https://github.com/rrangel07/GadgetGetter" target="_blank" rel="noreferrer"><img src={github} className="github" /></a>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={{span: 12, offset: 1}}>
+                <p>MVC, Node.js, Express.js, MySQL</p>
+            </Col>
+          </Row>
         </div>
-      </div>
-    </div>
+      </figure>
+      </Col>
+      <Col sm={12} md={6} >
+      <figure className='pos-rel'>
+          <img src={crypto} alt="Crypto Sentiment Index Project" className="work-img center" />
+          <div className="info info-small d-flex flex-column justify-content-end">
+            <Row className='align-items-end'>
+              <Col xs={{span: 6, offset: 1}}>
+                <a href="https://danqest.github.io/07-Crypto-Sentiment-Index/" target="_blank"  rel="noreferrer"><h1><strong>Crypto Sentiment Index</strong></h1></a>
+              </Col>
+              <Col xs={4} className>
+                <a href="https://github.com/rrangel07/07-Crypto-Sentiment-Index" target="_blank" rel="noreferrer"><img src={github} className="github" /></a>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={{span: 12, offset: 1}}>
+                  <p>HTML, CSS, javascript</p>
+              </Col>
+            </Row>
+        </div>
+      </figure>
+      </Col>
+      <Col sm={12} md={6} >
+      <figure className='pos-rel'>
+        <img src={weather} alt="Weather Dashboard" className="work-img center" />
+        <div className="info info-small d-flex flex-column justify-content-end">
+          <Row className='align-items-end'>
+            <Col xs={{span: 6, offset: 1}}>
+              <a href="https://rrangel07.github.io/6-Weather_Dashboard/" target="_blank"  rel="noreferrer"><h1><strong>Weather Dashboard</strong></h1></a>
+            </Col>
+            <Col xs={4} className>
+              <a href="https://github.com/rrangel07/6-Weather_Dashboard" target="_blank" rel="noreferrer"><img src={github} className="github" /></a>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={{span: 12, offset: 1}}>
+                <p>HTML, CSS, javascript</p>
+            </Col>
+          </Row>
+        </div>
+      </figure>
+      </Col>
+      <Col sm={12} md={6}>
+      <figure className='pos-rel'>  
+        <img src={planner} alt="Day Planner" className="work-img center" />
+        <div className="info info-small d-flex flex-column justify-content-end">
+          <Row className='align-items-end'>
+            <Col xs={{span: 6, offset: 1}}>
+              <a href="https://rrangel07.github.io/5-Day_Planner/" target="_blank"  rel="noreferrer"><h1><strong>Day Planner</strong></h1></a>
+            </Col>
+            <Col xs={4} className>
+              <a href="https://github.com/rrangel07/5-Day_Planner" target="_blank" rel="noreferrer"><img src={github} className="github" /></a>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={{span: 12, offset: 1}}>
+                <p>HTML, CSS, javascript</p>
+            </Col>
+          </Row>
+        </div>
+      </figure>
+      </Col>
+      <Col sm={12} md={6} >
+      <figure className='pos-rel'>
+        <img src={password} alt="Password Generator" className="work-img center" />
+        <div className="info info-small d-flex flex-column justify-content-end">
+          <Row className='align-items-end'>
+            <Col xs={{span: 6, offset: 1}}>
+              <a href="https://rrangel07.github.io/3-Password_Generator/" target="_blank"  rel="noreferrer"><h1><strong>Password Generator</strong></h1></a>
+            </Col>
+            <Col xs={4} className>
+              <a href="https://github.com/rrangel07/3-Password_Generator" target="_blank" rel="noreferrer"><img src={github} className="github" /></a>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={{span: 12, offset: 1}}>
+                <p>HTML, CSS, javascript</p>
+            </Col>
+          </Row>
+        </div>
+      </figure>
+      </Col>
+    </Container>
   );
 }

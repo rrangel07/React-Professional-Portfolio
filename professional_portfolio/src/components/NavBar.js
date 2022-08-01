@@ -2,13 +2,13 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import '../styles/style.css';
+import '../styles/navbar.css';
 
 function NavBar({ currentPage, handlePageChange }) {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className='background mb-5' variant='dark' expand="md">
       <Container>
-          <Navbar.Brand href="#home">Raul Rangel</Navbar.Brand>
+          <Navbar.Brand>Raul Rangel</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="d-flex justify-content-end">
