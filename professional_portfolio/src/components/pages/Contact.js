@@ -60,7 +60,7 @@ export default function ContactForm() {
   return (
     <Container className='background-form p-4'>
       <form className='d-flex flex-column'>
-        <label for='name'>Name: </label>
+        <label>Name: </label>
         <input
           value={name}
           id='name'
@@ -70,7 +70,7 @@ export default function ContactForm() {
           placeholder='Your name'
           className='mb-3'
         />
-        <label for='email'>Email: </label>
+        <label>Email: </label>
         <input
           value={email}
           name='email'
@@ -80,7 +80,7 @@ export default function ContactForm() {
           placeholder='Your e-mail'
           className='mb-3'
         />
-        <label for='message'>Message: </label>
+        <label>Message: </label>
         <textarea
           value={message}
           name='message'
