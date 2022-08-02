@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../styles/style.css';
-import shot from "../../shot.PNG";
+import shot from "../../images/shot.PNG";
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
+import '../../styles/style.css';
 
 export default function About() {
   return (
