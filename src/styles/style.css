@@ -2,8 +2,15 @@ html, #root{
 background-color: #222730;
 font-family: 'Abel', sans-serif;
 font-weight: 900;
+min-height: 100% !important;
 }
-
+body{
+background-color: #222730;
+height: inherit;
+}
+html {
+  position: relative;
+}
 
 .text {
   letter-spacing: 0.25em;
@@ -27,6 +34,8 @@ font-weight: 900;
 }
 .background-footer{
   background-color: rgba(253, 70, 2, 0.5);
+  position: sticky;
+  bottom: 0;
 }
 .shot {
   border-radius: 50%;
