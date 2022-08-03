@@ -2,7 +2,7 @@
   "name": "professional_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rrangel07.github.io/react_professional_portfolio",
+  "homepage": "https://rrangel07.github.io/React-Professional-Portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -16,6 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
