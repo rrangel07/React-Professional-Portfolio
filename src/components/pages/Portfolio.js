@@ -12,8 +12,8 @@ import '../../styles/style.css';
 
 export default function Portfolio() {
   return (
-    
-    <Container className='d-flex flex-wrap'>
+    <Container className='background-form p-4 d-flex flex-wrap'>
+      <h1><strong>Portfolio</strong></h1>
       <Col sm={12}>
       <figure className='pos-rel'>
         <img src={gadget} alt="GadgetGetter" id="work-img-header" className='center'/>

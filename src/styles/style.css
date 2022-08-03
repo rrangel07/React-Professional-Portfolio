@@ -12,6 +12,10 @@ font-weight: 900;
   align-items: center;
   padding: 10% 0;
 }
+
+.background{
+  background-color: #FD4602;
+}
 .background-div {
   background-color: rgba(76, 170, 179,0.6);
   border-radius: 110px 0 110px 0;
@@ -21,7 +25,10 @@ font-weight: 900;
   background-color: rgba(76, 170, 179,0.6);
   border-radius: 20px;
 }
+.background-footer{
+  background-color: rgba(253, 70, 2, 0.5);
 
+}
 .shot {
   border-radius: 50%;
 }
@@ -51,7 +58,7 @@ margin-left: auto !important;
   height: 100%;
   top:0;
   left:5%;
-  background-color: rgba(76, 170, 179,0.6);
+  background-color: rgba(253, 70, 2, 0.3);
   transition: 0.5s ease;
 }
 .info-small {

@@ -59,6 +59,7 @@ export default function ContactForm() {
 
   return (
     <Container className='background-form p-4'>
+      <h1><strong>Contact</strong></h1>
       <form className='d-flex flex-column'>
         <label>Name: </label>
         <input
